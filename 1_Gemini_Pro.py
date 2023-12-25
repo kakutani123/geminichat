@@ -18,6 +18,8 @@ st.set_page_config(
 st.title("Chat To XYthing")
 st.caption("a chatbot, powered by google gemini pro.")
 
+# key
+st.session_state.app_key = "AIzaSyA1IuvEHEe_Gm_wh0_TPyX6Q6EbdGHYajM"
 
 if "app_key" not in st.session_state:
     app_key = st.text_input("Your Gemini App Key", type='password')
